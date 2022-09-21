@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+
+<!-- Mandodary to import when you use thymelead -->
+<!-- Step-1 -->
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Thymeleaf Demo</title>
+	
+	<!-- STEP-2 -->
+	<!-- reference CSS file -->
+	<link ref="stylesheet"
+		th:href="@{/css/demo.css}"/>
+</head>
+
+<body>
+
+		<!-- Step :3 Apply the CSS -->
+	
+	<p th:text="'Time on the server is ' + ${theDate}" class="funny"/>
+	
+
+
+</body>
+
+</html>
